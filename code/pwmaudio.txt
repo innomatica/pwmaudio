@@ -1,0 +1,54 @@
+Configuration	pwmaudio
+STM32CubeMX 	4.17.0
+Date	11/06/2016
+MCU	STM32F051K8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Output Compare CH1 CH1N	TIM1_CH1	PA8
+TIM1	Output Compare CH1 CH1N	TIM1_CH1N	PA7
+TIM1	Output Compare CH2 CH2N	TIM1_CH2	PA9
+TIM1	Output Compare CH2 CH2N	TIM1_CH2N	PB0
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+7	PA1	GPIO_Output	LED
+13	PA7	TIM1_CH1N	
+14	PB0	TIM1_CH2N	
+18	PA8	TIM1_CH1	
+19	PA9	TIM1_CH2	
+23	PA13	SYS_SWDIO	
+24	PA14	SYS_SWCLK	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : pwmaudio
+Project Folder : /home/brian/Projects/PwmAudio/code/pwmaudio
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_F0 V1.6.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

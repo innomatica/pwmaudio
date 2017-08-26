@@ -1,0 +1,10 @@
+device stm32f051k8
+selectinterface swd
+speed 4000
+connect
+h
+loadbin ./build/pwmaudio.bin, 0
+r
+g
+q
+
